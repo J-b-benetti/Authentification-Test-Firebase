@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: '/espace-membre',
       name: 'espace-membre',
-      component: () => import('../components/EspaceMembre.vue')
+      component: () => import('../components/EspaceMembre.vue'),
     }
   ]
 })
