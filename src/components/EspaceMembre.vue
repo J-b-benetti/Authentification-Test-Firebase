@@ -5,7 +5,6 @@ const router = useRouter();
 
 const auth = getAuth();
 function logOut() {
-
     signOut(auth)
         .then(() => {
             // Sign-out successful.
@@ -24,6 +23,7 @@ function logOut() {
 
 <style scoped>
 .logOut {
+    display: flex;
     border-radius: 10px;
 }
 </style>
