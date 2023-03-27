@@ -42,7 +42,6 @@ function login() { // we also renamed this method
         <div class="form-outline mb-4">
             <p class="title">Veuillez vous connecter</p>
             <input type="email" id="form2Example1" class="form-control" placeholder="Entrer votre E-mail" v-model="email" />
-            <p v-if="errMsg">{{ errMsg }}</p>
             <label class="form-label" for="form2Example1">Adresse mail</label>
         </div>
 
@@ -52,7 +51,7 @@ function login() { // we also renamed this method
                 v-model="password" />
             <label class="form-label" for="form2Example2">Mot de passe</label>
         </div>
-        <p v-if="errMsg">{{ errMsg }}</p>
+        <p class="errorMsg" v-if="errMsg">{{ errMsg }}</p><br>
 
         <!-- Submit button -->
         <button type="submit" id="button-auth" class="btn btn-primary btn-block mb-4">Connexion</button>
@@ -84,5 +83,10 @@ function login() { // we also renamed this method
 #button-auth {
     width: 30%;
     margin-left: 35%;
+}
+
+.errorMsg {
+    margin-left: 35%;
+    font-size: 20px;
 }
 </style>
