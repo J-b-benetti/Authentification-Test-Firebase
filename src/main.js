@@ -4,15 +4,14 @@ import router from './router';
 import { initializeApp } from "firebase/app"
 
 import './assets/main.css';
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDzMJ47meCrYzlGgYslRpMRxUtuJzMD2z8",
-  authDomain: "vue-authentification-exemple.firebaseapp.com",
-  projectId: "vue-authentification-exemple",
-  storageBucket: "vue-authentification-exemple.appspot.com",
-  messagingSenderId: "582994970980",
-  appId: "1:582994970980:web:cf159c7ea1ba710c125271"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 // Initialize Firebase
