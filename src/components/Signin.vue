@@ -13,8 +13,8 @@ function login() { // we also renamed this method
     signInWithEmailAndPassword(auth, email.value, password.value) // THIS LINE CHANGED
         .then((userCredential) => {
             const user = userCredential.user;
-            console.log('Connexion avec succès');
-            console.log(userCredential);
+            //console.log('Connexion avec succès');
+            //console.log(userCredential);
             router.push('/espace-membre');// redirect to the member space
         })
         .catch(error => {
